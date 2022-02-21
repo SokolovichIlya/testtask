@@ -1,0 +1,21 @@
+.form {
+  position: relative;
+  background-color: $color-bg-block;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  &-block {
+    border-bottom: 1px solid $color-bg;
+    padding: $padding;
+    
+    &:empty {
+      display: none;
+    }
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

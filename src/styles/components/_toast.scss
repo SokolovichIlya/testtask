@@ -1,0 +1,10 @@
+.toast {
+
+
+  &.toast-absolute {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: $color-bg-block;
+  }
+}

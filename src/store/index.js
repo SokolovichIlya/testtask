@@ -5,6 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    notification: {
+      title: '',
+      body: '',
+      active: false,
+    }
+  },
+  getters: {
+    notification(state) {
+      return state.notification
+    }
   },
   mutations: {
   },
