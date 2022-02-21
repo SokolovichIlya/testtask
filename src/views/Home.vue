@@ -163,7 +163,9 @@ export default {
       notification.active = true;
 
       setTimeout(() => {
-        notification.active = false
+        notification.active = false;
+        notification.title = '';
+        notification.body = '';
       }, 5000)
     },
   },
