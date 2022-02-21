@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="order">
+    <el-steps :active="active" :space="200" simple>
+      <el-step title="Корзина" description="Some description"></el-step>
+      <el-step title="Данные заказчика" description="Some description"></el-step>
+      <el-step title="Подтверждение" description="Some description"></el-step>
+    </el-steps>
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  computed: {
+    active() {
+      return this.$route.meta.activeStep
+    }
+  },
+};
 </script>

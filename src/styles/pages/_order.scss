@@ -1,0 +1,9 @@
+.order {
+  width: 100%;
+  background-color: $color-bg-block;
+  border-radius: 5px;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
